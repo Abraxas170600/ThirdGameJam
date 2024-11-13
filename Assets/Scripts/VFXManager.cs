@@ -30,7 +30,7 @@ public class VFXManager : MonoBehaviour
     /// <summary>
     /// Method when its called start the VFX system.
     /// </summary>
-    public void PlayVFX(EnumEffects effectName, Transform positionEffect)
+    public void PlayVFX(EnumEffect effectName, Transform positionEffect)
     {
         foreach (EffectData effectData in effectsData.effectsObj)
         {
@@ -39,7 +39,7 @@ public class VFXManager : MonoBehaviour
                 Instantiate(effectData.effect, positionEffect.position, Quaternion.identity);
             }
         }
-        //cfxr_Effect.ResetState();
+        
         
     }
 }

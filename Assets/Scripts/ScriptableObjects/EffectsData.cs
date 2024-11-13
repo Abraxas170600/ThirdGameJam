@@ -7,7 +7,7 @@ public class EffectsData : ScriptableObject
 {
     public EffectData[] effectsObj;
 }
-public enum EnumEffects
+public enum EnumEffect
 {
     CFXR_Explo1,
     CFXR_Explo2,
@@ -18,6 +18,6 @@ public enum EnumEffects
 public class EffectData
 {
     public GameObject effect;
-    public EnumEffects effectKey;
+    public EnumEffect effectKey;
     
 }

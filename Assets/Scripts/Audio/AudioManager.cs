@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    public Sound[] musicSounds, sfxSounds;
+    [SerializeField] ScriptableAudio scriptableAudio;
+    [SerializeField] AudioMixer myMixer;
+
     public AudioSource musicSource, sfxSource;
 
     private void Awake()
@@ -24,34 +27,28 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic("Theme");
+        
     }
 
-    public void PlayMusic(string name)
+    public void PlayMusic(EnumSounds sonidoName)
     {
-        Sound s = Array.Find(musicSounds, x => x.name == name);
-
-        if (s == null)
+        foreach(SoundData soundData in scriptableAudio.claseAudioObj)
         {
-            Debug.Log("Sound Not Found");
-        } else
-        {
-            musicSource.clip = s.clip;
-            musicSource.Play();
+            if (soundData.soundKey == sonidoName)
+            {
+                musicSource.PlayOneShot(soundData.soundClip);
+            }
         }
     }
 
-    public void PlaySFX(string name)
+    public void PlaySFX(EnumSounds nameSFX)
     {
-        Sound s = Array.Find(sfxSounds, x => x.name == name);
-
-        if (s == null)
+        foreach (SoundData soundData in scriptableAudio.claseAudioObj)
         {
-            Debug.Log("Sound Not Found");
-        }
-        else
-        {
-            sfxSource.PlayOneShot(s.clip);
+            if (soundData.soundKey == nameSFX)
+            {
+                sfxSource.PlayOneShot(soundData.soundClip);
+            }
         }
     }
 
@@ -66,11 +63,23 @@ public class AudioManager : MonoBehaviour
 
     public void MusicVolume(float volume)
     {
-        musicSource.volume = volume;
+        //musicSource.volume = volume;
+        myMixer.SetFloat("music", Mathf.Log10(volume) * 20);
     }
 
     public void SFXVolume(float volume)
     {
-        sfxSource.volume = volume;
+        //sfxSource.volume = volume;
+        myMixer.SetFloat("sfx", Mathf.Log10(volume) * 20);
     }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
+    public void StopSFX()
+    {
+        sfxSource.Stop();
+    }
+
 }

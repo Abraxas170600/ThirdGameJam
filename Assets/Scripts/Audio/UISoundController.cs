@@ -7,6 +7,22 @@ public class UISoundController : MonoBehaviour
 {
     public Slider musicSlider, sfxSlider;
 
+    void Start()
+    {
+        musicSlider.minValue = 0.0001f;    
+        musicSlider.maxValue = 1;    
+        musicSlider.value = 0.5f;
+
+        sfxSlider.minValue = 0.0001f;
+        sfxSlider.maxValue = 1;
+        sfxSlider.value = 0.5f;
+    }
+
+    void Update()
+    {
+        MusicVolume();
+    }
+
     public void ToggleMusic()
     {
         AudioManager.Instance.ToggleMusic();
