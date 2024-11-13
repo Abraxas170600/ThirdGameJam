@@ -132,7 +132,7 @@ namespace CartoonFX
 		//----------------------------------------------------------------------------------------------------------------------------
 
 		[System.NonSerialized] public GameObject currentEffect;
-		GameObject[] effectsList;
+		public GameObject[] effectsList;
 		int index = 0;
 
 		Vector3 camInitialPosition;
