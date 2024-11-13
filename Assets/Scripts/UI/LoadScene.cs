@@ -7,12 +7,12 @@ public class LoadScene : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        LoadSceneManager.Instance.LoadSceneWithFade(sceneName);
     }
 
     public void ReloadCurrentScene()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LoadSceneManager.Instance.LoadSceneWithFade(SceneManager.GetActiveScene().name);
     }
 }
