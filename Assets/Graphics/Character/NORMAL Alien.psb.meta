@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 1ae0a3f234d67e74590931306fcdf29d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 500
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Ceja Der
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 882
+      width: 165
+      height: 100
+    spriteID: b53ce49252457c947a24d9277590ff43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 882}
+    spritePosition: {x: 577, y: 624}
+  - name: Ceja izq
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 769
+      y: 499
+      width: 176
+      height: 85
+    spriteID: be8faf6ac69ef6040b814a644cde08a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 769, y: 499}
+    spritePosition: {x: 266, y: 631}
+  - name: Brazo Izq
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 850
+      width: 188
+      height: 112
+    spriteID: 8bb0420b1a2e518438d9944ad3da8ae9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 850}
+    spritePosition: {x: 78, y: 197}
+  - name: Brazo Der
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 769
+      y: 379
+      width: 188
+      height: 112
+    spriteID: b3a43ce37d5178c478b0b3eb71746642
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 769, y: 379}
+    spritePosition: {x: 705, y: 206}
+  - name: Boca
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 882
+      width: 272
+      height: 106
+    spriteID: 89ef1ae8c4e5b67428e3c769ddcd13f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 882}
+    spritePosition: {x: 367, y: 334}
+  - name: Ojo IZQ
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 892
+      y: 615
+      width: 112
+      height: 249
+    spriteID: 82093b23062712d479c263d5a9667b2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 892, y: 615}
+    spritePosition: {x: 344, y: 410}
+  - name: Ojo DER
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 769
+      y: 615
+      width: 115
+      height: 250
+    spriteID: 9497f74193bd284499a24403f6b49ecf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 769, y: 615}
+    spritePosition: {x: 555, y: 404}
+  - name: "Torso\_+\_Cabeza"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 379
+      width: 448
+      height: 495
+    spriteID: 83b1529b6c107864bae6711b96e9f2dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 379}
+    spritePosition: {x: 283, y: 251}
+  - name: Brazo Izq
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 379
+      width: 301
+      height: 228
+    spriteID: 889359a2d535a914ba4eee599834b69f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 379}
+    spritePosition: {x: 132, y: 276}
+  - name: Brazo Der
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 615
+      width: 301
+      height: 227
+    spriteID: e7f32ef430c04c94ebc91f2730911aa6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 615}
+    spritePosition: {x: 540, y: 281}
+  - name: Nave
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1000
+      height: 367
+    spriteID: df1d15fcf478d644fbb815d769d20e20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Ceja Der
+    spriteName: Ceja Der
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b53ce49252457c947a24d9277590ff43
+    layerID: 35
+    mosaicPosition: {x: 284, y: 882}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ceja izq
+    spriteName: Ceja izq
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be8faf6ac69ef6040b814a644cde08a8
+    layerID: 34
+    mosaicPosition: {x: 769, y: 499}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Brazo Izq
+    spriteName: Brazo Izq
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8bb0420b1a2e518438d9944ad3da8ae9
+    layerID: 31
+    mosaicPosition: {x: 460, y: 850}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Brazo Der
+    spriteName: Brazo Der
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b3a43ce37d5178c478b0b3eb71746642
+    layerID: 30
+    mosaicPosition: {x: 769, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Boca
+    spriteName: Boca
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 89ef1ae8c4e5b67428e3c769ddcd13f1
+    layerID: 29
+    mosaicPosition: {x: 4, y: 882}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ojo IZQ
+    spriteName: Ojo IZQ
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 82093b23062712d479c263d5a9667b2a
+    layerID: 28
+    mosaicPosition: {x: 892, y: 615}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ojo DER
+    spriteName: Ojo DER
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9497f74193bd284499a24403f6b49ecf
+    layerID: 27
+    mosaicPosition: {x: 769, y: 615}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Torso\_+\_Cabeza"
+    spriteName: "Torso\_+\_Cabeza"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 83b1529b6c107864bae6711b96e9f2dc
+    layerID: 26
+    mosaicPosition: {x: 4, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Brazo Izq
+    spriteName: Brazo Izq
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 889359a2d535a914ba4eee599834b69f
+    layerID: 25
+    mosaicPosition: {x: 460, y: 379}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Brazo Der
+    spriteName: Brazo Der
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7f32ef430c04c94ebc91f2730911aa6
+    layerID: 24
+    mosaicPosition: {x: 460, y: 615}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Nave
+    spriteName: Nave
+    isGroup: 0
+    parentIndex: -1
+    spriteID: df1d15fcf478d644fbb815d769d20e20
+    layerID: 22
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
