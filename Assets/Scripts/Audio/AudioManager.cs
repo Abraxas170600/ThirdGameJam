@@ -25,18 +25,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        
-    }
-
     public void PlayMusic(EnumSounds sonidoName)
     {
         foreach(SoundData soundData in scriptableAudio.claseAudioObj)
         {
             if (soundData.soundKey == sonidoName)
             {
-                musicSource.PlayOneShot(soundData.soundClip);
+                musicSource.Stop();
+                musicSource.clip = soundData.soundClip;
+                musicSource.Play();
             }
         }
     }

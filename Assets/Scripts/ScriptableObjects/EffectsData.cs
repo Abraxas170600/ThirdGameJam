@@ -11,7 +11,8 @@ public enum EnumEffect
 {
     CFXR_Explo1,
     CFXR_Explo2,
-    CFXR_Explo3
+    CFXR_Explo3,
+    CFXR_Boom
 }
 
 [System.Serializable]

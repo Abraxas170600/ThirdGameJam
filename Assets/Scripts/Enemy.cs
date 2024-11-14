@@ -17,8 +17,15 @@ public class Enemy : Entity
         base.Start();
         player = GetPlayer();
     }
+    private void OnEnable()
+    {
+        respawnEvent.Invoke();
+    }
     protected override void Defeat()
     {
+        VFXManager.Instance.PlayVFX(EnumEffect.CFXR_Explo1, transform);
+        VFXManager.Instance.PlayVFX(EnumEffect.CFXR_Boom, transform);
+        AudioManager.Instance.PlaySFX(EnumSounds.Sfx_Crash);
         DefeatEvent.Invoke();
     }
     protected override void Attack(Entity entity)
@@ -26,6 +33,7 @@ public class Enemy : Entity
         base.Attack(entity);
         DefeatEvent.Invoke();
         gameObject.SetActive(false);
+        AudioManager.Instance.PlaySFX(EnumSounds.Sfx_Crash);
     }
     protected override void Movement()
     {
@@ -40,7 +48,7 @@ public class Enemy : Entity
         Player player = collision.GetComponent<Player>();
         if (player != null)
         {
-            //DamageEvent.Invoke(enemy);
+            VFXManager.Instance.PlayVFX(EnumEffect.CFXR_Explo1, transform);
             Attack(player);
         }
     }

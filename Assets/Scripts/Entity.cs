@@ -40,9 +40,10 @@ public abstract class Entity : MonoBehaviour
         entity.TakeDamage(damage);
     }
 
-    public void TakeDamage(float damageAmount)
+    protected virtual void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
+        healthEvent.Invoke(RemainingHealthPercentage);
 
         if (currentHealth <= 0)
         {
@@ -51,8 +52,6 @@ public abstract class Entity : MonoBehaviour
             deathEvent.Invoke();
             Defeat();
         }
-
-        healthEvent.Invoke(RemainingHealthPercentage);
     }
 
     public void AddHealth(float amountToAdd)

@@ -8,7 +8,8 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] private int difficultyLimitWave = 10;
     [SerializeField] private List<Enemy> enemyTypes;
-    [SerializeField] private UltEvent<int, int> waveEvents;
+    [SerializeField] private UltEvent<int, int> gameValuesEvents;
+    [SerializeField] private UltEvent completeWaveEvents;
 
     private EnemySpawner spawner;
     private int waveNumber = 0;
@@ -17,20 +18,23 @@ public class WaveManager : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMusic(EnumSounds.Sound_Gameplay);
         spawner = GetComponent<EnemySpawner>();
         spawner.Initialize(enemyTypes);
         enemyTracker = new(this);
-
-        StartNextWave();
+        StartCoroutine(StartNextWave());
     }
 
-    private void StartNextWave()
+    private IEnumerator StartNextWave()
     {
         waveNumber++;
         PlayerPrefs.SetInt("MaxWave", waveNumber);
+        completeWaveEvents.Invoke();
 
-        int enemyCount = waveNumber <= difficultyLimitWave ? waveNumber * 5 : difficultyLimitWave * 5;
-        float spawnRate = waveNumber <= difficultyLimitWave ? Mathf.Max(0.5f, 1.6f - (waveNumber * 0.1f)) : Mathf.Max(0.5f, 1.6f - (difficultyLimitWave * 0.1f));
+        yield return new WaitForSeconds(4f);
+
+        int enemyCount = waveNumber <= difficultyLimitWave ? waveNumber * 3 : difficultyLimitWave * 3;
+        float spawnRate = waveNumber <= difficultyLimitWave ? Mathf.Max(1f, 2.5f - (waveNumber * 0.1f)) : Mathf.Max(1f, 2.5f - (difficultyLimitWave * 0.1f));
 
         WaveConfig waveConfig = new WaveConfigBuilder()
             .SetEnemyCount(enemyCount)
@@ -53,13 +57,13 @@ public class WaveManager : MonoBehaviour
 
     public void OnWaveCleared()
     {
-        StartNextWave();
+        StartCoroutine(StartNextWave());
     }
 
     public void NotifyEnemyDestroyed()
     {
         enemyTracker.DecreaseEnemyCount();
-        waveEvents.Invoke(killsAmount++, waveNumber);
+        gameValuesEvents.Invoke(killsAmount++, waveNumber);
         PlayerPrefs.SetInt("HighEnemiesKilled", killsAmount);
     }
 }

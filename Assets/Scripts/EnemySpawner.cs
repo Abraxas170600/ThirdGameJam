@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            int enemyTypeIndex = UnityEngine.Random.Range(0, enemyTypes.Count - 1);
+            int enemyTypeIndex = UnityEngine.Random.Range(0, enemyTypes.Count);
             Enemy enemy = Instantiate(enemyTypes[enemyTypeIndex], Vector3.zero, Quaternion.identity);
             enemy.gameObject.SetActive(false);
             enemyPool.Add(enemy);
@@ -58,13 +58,22 @@ public class EnemySpawner : MonoBehaviour
 
     private Enemy GetEnemyFromPool()
     {
+        List<Enemy> inactiveEnemies = new();
+
         for (int i = 0; i < enemyPool.Count; i++)
         {
             if (!enemyPool[i].gameObject.activeInHierarchy)
             {
-                return enemyPool[i];
+                inactiveEnemies.Add(enemyPool[i]);
             }
         }
+
+        if (inactiveEnemies.Count > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, inactiveEnemies.Count);
+            return inactiveEnemies[randomIndex];
+        }
+
         CreateEnemyPool(1);
         return enemyPool[^1];
     }

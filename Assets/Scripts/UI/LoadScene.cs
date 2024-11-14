@@ -12,7 +12,6 @@ public class LoadScene : MonoBehaviour
 
     public void ReloadCurrentScene()
     {
-        Time.timeScale = 1f;
         LoadSceneManager.Instance.LoadSceneWithFade(SceneManager.GetActiveScene().name);
     }
 }

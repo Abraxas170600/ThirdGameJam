@@ -79,6 +79,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 1ae0a3f234d67e74590931306fcdf29d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 853031209949245681}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 1ae0a3f234d67e74590931306fcdf29d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 206090346802673793}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 1ae0a3f234d67e74590931306fcdf29d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8866584794691530281}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 1ae0a3f234d67e74590931306fcdf29d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4725884519710707092}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 1ae0a3f234d67e74590931306fcdf29d, type: 3}
 --- !u!1 &5531004500550578525 stripped
 GameObject:
@@ -106,3 +115,105 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &206090346802673793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531004500550578525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a62a5dd5c11b924aa02bea541533574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  healthEvent:
+    _PersistentCalls: []
+  deathEvent:
+    _PersistentCalls:
+    - _Target: {fileID: 5531004500550578525}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 8866584794691530281}
+      _MemberName: set_enabled
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+  speed: 2.5
+  damage: 10
+  respawnEvent:
+    _PersistentCalls:
+    - _Target: {fileID: 8866584794691530281}
+      _MemberName: set_enabled
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+--- !u!58 &8866584794691530281
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531004500550578525}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.8}
+  serializedVersion: 2
+  m_Radius: 0.9
+--- !u!210 &4725884519710707092
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531004500550578525}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 22
+  m_SortAtRoot: 0

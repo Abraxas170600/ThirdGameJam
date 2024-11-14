@@ -11,16 +11,11 @@ public class UISoundController : MonoBehaviour
     {
         musicSlider.minValue = 0.0001f;    
         musicSlider.maxValue = 1;    
-        musicSlider.value = 0.5f;
+        //musicSlider.value = 0.5f;
 
         sfxSlider.minValue = 0.0001f;
         sfxSlider.maxValue = 1;
-        sfxSlider.value = 0.5f;
-    }
-
-    void Update()
-    {
-        MusicVolume();
+        //sfxSlider.value = 0.5f;
     }
 
     public void ToggleMusic()

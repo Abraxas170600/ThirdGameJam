@@ -330,8 +330,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyLimitWave: 10
   enemyTypes:
-  - {fileID: 7142199998229213835, guid: 5afe92abed7599140981d485d6936f52, type: 3}
-  waveEvents:
+  - {fileID: 206090346802673793, guid: 2f6264272429e61459087ca1453bca44, type: 3}
+  - {fileID: 6620066186537521398, guid: 2b45df0f98973dc48be6dd020f13b172, type: 3}
+  - {fileID: 3046670083391728180, guid: 84d308828167706488a8d8bd99aced42, type: 3}
+  gameValuesEvents:
+    _PersistentCalls: []
+  completeWaveEvents:
     _PersistentCalls: []
 --- !u!1 &6084250852448002843
 GameObject:

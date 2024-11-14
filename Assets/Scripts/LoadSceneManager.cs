@@ -26,8 +26,10 @@ public class LoadSceneManager : MonoBehaviour
     }
     IEnumerator Fading(float delay, string sceneName)
     {
+        Time.timeScale = 1;
         fadeAnim.SetBool("Fade", true);
         yield return new WaitForSeconds(delay);
+        //Time.timeScale = 1;
         SceneManager.LoadSceneAsync(sceneName);
         fadeAnim.SetBool("Fade", false);
     }
